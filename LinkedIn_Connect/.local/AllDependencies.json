@@ -1785,15 +1785,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nainksha\\.nuget\\packages\\": {}
+    "C:\\Users\\Kamalesh\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "LinkedIn_Connect",
       "projectName": "LinkedIn_Connect",
-      "projectPath": "E:\\Dhamma\\UiPath\\RPA\\LinkedIn_Connect\\.local",
-      "packagesPath": "C:\\Users\\Nainksha\\.nuget\\packages\\",
-      "outputPath": "E:\\Dhamma\\UiPath\\RPA\\LinkedIn_Connect\\.local"
+      "projectPath": "C:\\Nainksha\\RPA\\uipath_automation\\LinkedIn_Connect\\.local",
+      "packagesPath": "C:\\Users\\Kamalesh\\.nuget\\packages\\",
+      "outputPath": "C:\\Nainksha\\RPA\\uipath_automation\\LinkedIn_Connect\\.local"
     },
     "frameworks": {
       "net461": {
