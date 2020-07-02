@@ -1,0 +1,33 @@
+<extract>
+	<row exact='1'>
+		<webctrl class='search-result search-result__occluded-item ember-view' tag='li' />
+		<webctrl class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' tag='div' idx='1' />
+		<webctrl class='search-result__wrapper' tag='div' idx='1' />
+		<webctrl class='search-result__info pt3 pb4 ph0' tag='div' idx='1' />
+	</row>
+	<column exact='1' name2='URL' attr2='href' name='Candidate' attr='text'>
+		<webctrl class='search-result search-result__occluded-item ember-view' tag='li' />
+		<webctrl class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' tag='div' idx='1' />
+		<webctrl class='search-result__wrapper' tag='div' idx='1' />
+		<webctrl class='search-result__info pt3 pb4 ph0' tag='div' idx='1' />
+		<webctrl class='search-result__result-link ember-view' tag='a' idx='1' />
+		<webctrl class='actor-name-with-distance search-result__title single-line-truncate ember-view' tag='h3' idx='1' />
+		<webctrl class='name-and-icon' tag='span' idx='1' />
+		<webctrl class='name-and-distance' tag='span' idx='1' />
+		<webctrl class='name actor-name' tag='span' idx='1' />
+	</column>
+	<column exact='1' name='Designation' attr='text'>
+		<webctrl class='search-result search-result__occluded-item ember-view' tag='li' />
+		<webctrl class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' tag='div' idx='1' />
+		<webctrl class='search-result__wrapper' tag='div' idx='1' />
+		<webctrl class='search-result__info pt3 pb4 ph0' tag='div' idx='1' />
+		<webctrl class='subline-level-1 t-14 t-black t-normal search-result__truncate' tag='p' idx='1' />
+	</column>
+	<column exact='1' name='Location' attr='text'>
+		<webctrl class='search-result search-result__occluded-item ember-view' tag='li' />
+		<webctrl class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' tag='div' idx='1' />
+		<webctrl class='search-result__wrapper' tag='div' idx='1' />
+		<webctrl class='search-result__info pt3 pb4 ph0' tag='div' idx='1' />
+		<webctrl class='subline-level-2 t-12 t-black--light t-normal search-result__truncate' tag='p' idx='1' />
+	</column>
+</extract>

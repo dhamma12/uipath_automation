@@ -1,0 +1,106 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="Chrome" />
+    <title>Select Apps to open</title>
+</head>
+<body>
+    <h3>Select the applications you want to open: -</h3>
+	<form name="CustomInput" action="#">
+    <input id="Pulse" type="radio" value="Pulse" name="PulseOrAnyConnect" /> Pulse Secure
+    <br />
+    <input id="AnyConnect" type="radio" value="Anyconnect" name="PulseOrAnyConnect" /> Cisco AnyConnect
+    <br />
+    <input id="Toad" type="checkbox" checked value="Toad" /> Toad
+    <br />
+    <input id="GATE" type="checkbox" checked value="GATE" /> UPM Gate
+    <br />
+    <input id="SNOW" type="checkbox" checked value="SNOW" /> SNOW
+    <br />
+    <input id="Screenshot" type="checkbox" checked value="Screenshot" /> Screenshot
+    <br />
+    <input id="Skype" type="checkbox" checked value="Skype" /> Skype
+    <br />
+    <input id="Outlook" type="checkbox" checked value="Outlook" /> Outlook
+    <br />
+    <br />
+    <button onclick="SubmitValues()">Submit</button>
+	<br />
+	<input id="Reset" type="reset" value="reset" />
+	</form>
+
+    <script type="text/javascript">
+        var Pulse, AnyConnect, Toad, GATE, SNOW, Screenshot, Skype, Outlook;
+
+        function check(checkID) {
+            if (document.getElementById(checkID).checked == true)
+                return true;
+            else
+                return false;
+        }
+
+        function SubmitValues() {
+            if (this.check("Pulse") == true) {
+                Pulse = document.getElementById("Pulse").value;
+            }
+            else {
+                Pulse = null;
+            }
+
+            if (this.check("AnyConnect") == true) {
+                AnyConnect = document.getElementById("AnyConnect").value;
+            }
+            else {
+                AnyConnect = null;
+            }
+
+            if (this.check("Toad")) {
+                Toad = document.getElementById("Toad").value;
+            }
+            else {
+                Toad = null;
+            }
+
+            if (this.check("GATE")) {
+                GATE = document.getElementById("GATE").value;
+            }
+            else {
+                GATE = null;
+            }
+
+            if (this.check("SNOW")) {
+                SNOW = document.getElementById("SNOW").value;
+            }
+            else {
+                SNOW = null;
+            }
+
+            if (this.check("Screenshot")) {
+                Screenshot = document.getElementById("Screenshot").value;
+            }
+            else {
+                Screenshot = null;
+            }
+
+            if (this.check("Skype")) {
+                Skype = document.getElementById("Skype").value;
+            }
+            else {
+                Skype = null;
+            }
+
+            if (this.check("Outlook")) {
+                Outlook = document.getElementById("Outlook").value;
+            }
+            else {
+                Outlook = null;
+            }
+
+            window.external.setResult(Pulse + "," + AnyConnect + "," + Toad + "," + GATE + "," + SNOW + "," + Screenshot + "," + Skype + "," + Outlook);
+            return true;
+        }
+    </script>
+</body>
+</html>
