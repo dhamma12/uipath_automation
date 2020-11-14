@@ -151,13 +151,10 @@
                                       </sap:WorkflowViewStateService.ViewState>
                                       <ui:UiElementExists DisplayName="Element Exists 'BUTTON  ember109'" Exists="[isConnectPresent]" sap:VirtualizedContainerService.HintSize="1588,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_20">
                                         <ui:UiElementExists.Target>
-                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2acdc0e9-8211-452b-92ce-e0f78fd8f9c7" InformativeScreenshot="04f4cac3347e1f8b269ea28ece92355f" Selector="&lt;html app='firefox.exe' title='* | LinkedIn' /&gt;&lt;webctrl id='ember1*' tag='BUTTON' type='button' idx='1' /&gt;">
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2acdc0e9-8211-452b-92ce-e0f78fd8f9c7" InformativeScreenshot="04f4cac3347e1f8b269ea28ece92355f" Selector="&lt;html app='firefox.exe' title='* | LinkedIn' /&gt;&lt;webctrl id='ember1*' tag='BUTTON' type='button' idx='1' /&gt;" WaitForReady="COMPLETE">
                                             <ui:Target.TimeoutMS>
                                               <InArgument x:TypeArguments="x:Int32" />
                                             </ui:Target.TimeoutMS>
-                                            <ui:Target.WaitForReady>
-                                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                                            </ui:Target.WaitForReady>
                                           </ui:Target>
                                         </ui:UiElementExists.Target>
                                         <sap:WorkflowViewStateService.ViewState>
@@ -174,7 +171,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <If.Then>
-                                          <Sequence DisplayName="Sequence - Connect Button Present" sap:VirtualizedContainerService.HintSize="538.4,735.2" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                                          <Sequence DisplayName="Sequence - Connect Button Present" sap:VirtualizedContainerService.HintSize="538.4,1013.6" sap2010:WorkflowViewState.IdRef="Sequence_84">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -183,13 +180,10 @@
                                             </sap:WorkflowViewStateService.ViewState>
                                             <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="496.8,107.2" sap2010:WorkflowViewState.IdRef="GetValue_13">
                                               <ui:GetValue.Target>
-                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20a547af-2e0d-4465-bfad-d8a45cee7d9e" InformativeScreenshot="5b8b9f3de296f065b1f323e633a5d0cf" Selector="&lt;webctrl parentid='ember120' tag='SPAN' /&gt;">
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20a547af-2e0d-4465-bfad-d8a45cee7d9e" InformativeScreenshot="5b8b9f3de296f065b1f323e633a5d0cf" Selector="&lt;webctrl parentid='ember1*' idx='56' /&gt;" WaitForReady="COMPLETE">
                                                   <ui:Target.TimeoutMS>
                                                     <InArgument x:TypeArguments="x:Int32" />
                                                   </ui:Target.TimeoutMS>
-                                                  <ui:Target.WaitForReady>
-                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                                                  </ui:Target.WaitForReady>
                                                 </ui:Target>
                                               </ui:GetValue.Target>
                                               <ui:GetValue.Value>
@@ -209,7 +203,7 @@
                                                 <InArgument x:TypeArguments="x:String">[strConnectButtonText.Trim()]</InArgument>
                                               </Assign.Value>
                                             </Assign>
-                                            <Switch x:TypeArguments="x:String" DisplayName="Switch check Connect, Follow and Pending" Expression="[strConnectButtonText]" sap:VirtualizedContainerService.HintSize="496.8,302.4" sap2010:WorkflowViewState.IdRef="Switch`1_9">
+                                            <Switch x:TypeArguments="x:String" DisplayName="Switch check Connect, Follow and Pending" Expression="[strConnectButtonText]" sap:VirtualizedContainerService.HintSize="496.8,580.8" sap2010:WorkflowViewState.IdRef="Switch`1_9">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -241,7 +235,7 @@
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                 </ui:Click>
-                                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON  ember1005'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_59" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'BUTTON  ember1005'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_59" KeyModifiers="None" MouseButton="BTN_LEFT">
                                                   <ui:Click.CursorPosition>
                                                     <ui:CursorPosition Position="Center">
                                                       <ui:CursorPosition.OffsetX>
