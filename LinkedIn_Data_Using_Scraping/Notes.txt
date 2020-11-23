@@ -1,0 +1,20 @@
+VP OR President OR MD OR Director OR CEO OR CTO
+Procurement OR Head Vendor OR Vendor Management OR Contract Manager OR Founder
+Senior Engineering Manager OR Head of Engineering OR Director of Engineering
+India Head OR HR OR TA OR Talent Acquisition OR Human Resource OR Recruiter
+
+Ansys
+Amazon
+STMicroelectronics
+Walmart Labs India	--- Not Done
+Cerence
+The Toro Company
+Mitsubishi-corporation-india -- Not Done
+Denso
+Bose				-- Already present
+Marquardt India Pvt. Ltd
+Allgo Embedded
+Schindler Pvt Ltd
+UTC Aerospace
+Varroc Lighting Systems
+Mercedes-Benz Research and Development
