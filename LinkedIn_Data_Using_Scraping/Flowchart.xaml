@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Flowchart" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,841" sap2010:WorkflowViewState.IdRef="Flowchart_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Flowchart" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="934,801" sap2010:WorkflowViewState.IdRef="Flowchart_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="46">
       <x:String>System.Activities</x:String>
@@ -29,6 +29,7 @@
       <x:String>System.Collections.ObjectModel</x:String>
       <x:String>System.Activities.DynamicUpdate</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -54,6 +55,8 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Flowchart" sap:VirtualizedContainerService.HintSize="644,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -626,7 +629,7 @@
           <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Firefox Sequence" sap:VirtualizedContainerService.HintSize="518,1452" sap2010:WorkflowViewState.IdRef="Sequence_111">
+      <Sequence DisplayName="Firefox Sequence" sap:VirtualizedContainerService.HintSize="518,1749" sap2010:WorkflowViewState.IdRef="Sequence_111">
         <Sequence.Variables>
           <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
           <Variable x:TypeArguments="x:String" Name="URL" />
@@ -638,11 +641,28 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="476,92" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Please enter name of the Company : " Title="Company">
-          <ui:InputDialog.Result>
-            <OutArgument x:TypeArguments="x:String">[Company]</OutArgument>
-          </ui:InputDialog.Result>
-        </ui:InputDialog>
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,51" sap2010:WorkflowViewState.IdRef="CommentOut_22">
+          <ui:CommentOut.Body>
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,184" sap2010:WorkflowViewState.IdRef="Sequence_122">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Please enter name of the Company : " Title="Company">
+                <ui:InputDialog.Result>
+                  <OutArgument x:TypeArguments="x:String">[Company]</OutArgument>
+                </ui:InputDialog.Result>
+              </ui:InputDialog>
+            </Sequence>
+          </ui:CommentOut.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:CommentOut>
         <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,51" sap2010:WorkflowViewState.IdRef="CommentOut_17">
           <ui:CommentOut.Body>
             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,184" sap2010:WorkflowViewState.IdRef="Sequence_105">
@@ -667,7 +687,7 @@
         </ui:CommentOut>
         <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,51" sap2010:WorkflowViewState.IdRef="CommentOut_18">
           <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="529,278" sap2010:WorkflowViewState.IdRef="Sequence_107">
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="529,276" sap2010:WorkflowViewState.IdRef="Sequence_107">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -706,7 +726,7 @@
         </ui:CommentOut>
         <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,51" sap2010:WorkflowViewState.IdRef="CommentOut_19">
           <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="363,394" sap2010:WorkflowViewState.IdRef="Sequence_109">
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="364,392" sap2010:WorkflowViewState.IdRef="Sequence_109">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -738,34 +758,43 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:CommentOut>
-        <Assign sap:VirtualizedContainerService.HintSize="476,60" sap2010:WorkflowViewState.IdRef="Assign_2">
-          <Assign.To>
-            <OutArgument x:TypeArguments="x:String">[File_Name]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="x:String">["Data_Firefox_" + Company + ".xlsx"]</InArgument>
-          </Assign.Value>
-        </Assign>
-        <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="476,436" sap2010:WorkflowViewState.IdRef="Sequence_119">
+        <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="476,683" sap2010:WorkflowViewState.IdRef="Sequence_119">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'SearchLin Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_39" InformativeScreenshot="5f141b80bb36e46a366d2bcdf4dfa667" Selector="&lt;html app='firefox.exe' title='Search | LinkedIn' /&gt;">
+          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'SearchLin Page'" sap:VirtualizedContainerService.HintSize="434,591" sap2010:WorkflowViewState.IdRef="BrowserScope_39" InformativeScreenshot="5f141b80bb36e46a366d2bcdf4dfa667" Selector="&lt;html app='firefox.exe' title='Search | LinkedIn' /&gt;">
             <ui:BrowserScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,445" sap2010:WorkflowViewState.IdRef="Sequence_118">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'UL'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' class='search-result search-result__occluded-item ember-view'/&gt;&lt;webctrl tag='div' class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__wrapper' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__info pt3 pb4 ph0' idx='1'/&gt;&lt;/row&gt;&lt;column exact='1' name='Name' attr='text' name2='URL' attr2='href'&gt;&lt;webctrl tag='li' class='search-result search-result__occluded-item ember-view'/&gt;&lt;webctrl tag='div' class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__wrapper' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__info pt3 pb4 ph0' idx='1'/&gt;&lt;webctrl tag='a' class='search-result__result-link ember-view' idx='1'/&gt;&lt;webctrl tag='h3' class='actor-name-with-distance search-result__title single-line-truncate ember-view' idx='1'/&gt;&lt;webctrl tag='span' class='name-and-icon' idx='1'/&gt;&lt;webctrl tag='span' class='name-and-distance' idx='1'/&gt;&lt;webctrl tag='span' class='name actor-name' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Designation' attr='text'&gt;&lt;webctrl tag='li' class='search-result search-result__occluded-item ember-view'/&gt;&lt;webctrl tag='div' class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__wrapper' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__info pt3 pb4 ph0' idx='1'/&gt;&lt;webctrl tag='p' class='subline-level-1 t-14 t-black t-normal search-result__truncate' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Location' attr='text'&gt;&lt;webctrl tag='li' class='search-result search-result__occluded-item ember-view'/&gt;&lt;webctrl tag='div' class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__wrapper' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__info pt3 pb4 ph0' idx='1'/&gt;&lt;webctrl tag='p' class='subline-level-2 t-12 t-black--light t-normal search-result__truncate' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_39" MaxNumberOfResults="10" NextLinkSelector="&lt;webctrl id='ember88709' tag='BUTTON' /&gt;" SimulateClick="True">
+                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'BUTTON  ember112011'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                    <ui:GetValue.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ffdb9d82-09b7-4a77-988c-22c11b53d26e" InformativeScreenshot="22f648709f55a42424f1de924ea2c6a9" Selector="&lt;webctrl parentid='ember112976' tag='SPAN' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:GetValue.Target>
+                    <ui:GetValue.Value>
+                      <OutArgument x:TypeArguments="x:String">[Company]</OutArgument>
+                    </ui:GetValue.Value>
+                  </ui:GetValue>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[Company]" />
+                  <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'UL'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='li' class='search-result search-result__occluded-item ember-view'/&gt;&lt;webctrl tag='div' class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__wrapper' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__info pt3 pb4 ph0' idx='1'/&gt;&lt;/row&gt;&lt;column exact='1' name='Name' attr='text' name2='URL' attr2='href'&gt;&lt;webctrl tag='li' class='search-result search-result__occluded-item ember-view'/&gt;&lt;webctrl tag='div' class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__wrapper' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__info pt3 pb4 ph0' idx='1'/&gt;&lt;webctrl tag='a' class='search-result__result-link ember-view' idx='1'/&gt;&lt;webctrl tag='h3' class='actor-name-with-distance search-result__title single-line-truncate ember-view' idx='1'/&gt;&lt;webctrl tag='span' class='name-and-icon' idx='1'/&gt;&lt;webctrl tag='span' class='name-and-distance' idx='1'/&gt;&lt;webctrl tag='span' class='name actor-name' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Designation' attr='text'&gt;&lt;webctrl tag='li' class='search-result search-result__occluded-item ember-view'/&gt;&lt;webctrl tag='div' class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__wrapper' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__info pt3 pb4 ph0' idx='1'/&gt;&lt;webctrl tag='p' class='subline-level-1 t-14 t-black t-normal search-result__truncate' idx='1'/&gt;&lt;/column&gt;&lt;column exact='1' name='Location' attr='text'&gt;&lt;webctrl tag='li' class='search-result search-result__occluded-item ember-view'/&gt;&lt;webctrl tag='div' class='search-entity search-result search-result--person search-result--occlusion-enabled ember-view' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__wrapper' idx='1'/&gt;&lt;webctrl tag='div' class='search-result__info pt3 pb4 ph0' idx='1'/&gt;&lt;webctrl tag='p' class='subline-level-2 t-12 t-black--light t-normal search-result__truncate' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_39" MaxNumberOfResults="4" NextLinkSelector="&lt;webctrl id='ember112576' tag='BUTTON' /&gt;" SimulateClick="True">
                     <ui:ExtractData.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="036d5f3d-6f63-4f7f-adc2-b84dfc347bc9" InformativeScreenshot="52fc3fba82274d7fe37871fdc5cf223b" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' tag='DIV' /&gt;" WaitForReady="COMPLETE">
                         <ui:Target.TimeoutMS>
@@ -779,32 +808,40 @@
             </ui:BrowserScope.Body>
           </ui:BrowserScope>
         </Sequence>
+        <Assign sap:VirtualizedContainerService.HintSize="476,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[File_Name]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[Company.Trim() + ".xlsx"]</InArgument>
+          </Assign.Value>
+        </Assign>
         <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="476,51" sap2010:WorkflowViewState.IdRef="CommentOut_20">
           <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="467,501" sap2010:WorkflowViewState.IdRef="Sequence_120">
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,496" sap2010:WorkflowViewState.IdRef="Sequence_120">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="424.8,408.8" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+              <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="426,404" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,260" sap2010:WorkflowViewState.IdRef="Sequence_117">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,257" sap2010:WorkflowViewState.IdRef="Sequence_117">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="1" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="333.6,64.8" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[row]">
+                      <ui:GetRowItem Column="{x:Null}" ColumnName="{x:Null}" ColumnIndex="1" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="334,64" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[row]">
                         <ui:GetRowItem.Value>
                           <OutArgument x:TypeArguments="x:String">[URL]</OutArgument>
                         </ui:GetRowItem.Value>
                       </ui:GetRowItem>
-                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="333.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[URL]" />
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[URL]" />
                     </Sequence>
                   </ActivityAction>
                 </ui:ForEachRow.Body>
@@ -818,19 +855,38 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:CommentOut>
-        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="476,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_6" WorkbookPath="[File_Name]">
+        <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="476,379" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_6" WorkbookPath="[File_Name]">
           <ui:ExcelApplicationScope.Body>
             <ActivityAction x:TypeArguments="ui:WorkbookApplication">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_116">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,270" sap2010:WorkflowViewState.IdRef="Sequence_116">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ExcelWriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_6" SheetName="Sheet1" StartingCell="A1" />
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_121">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ExcelWriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_6" SheetName="Sheet1" StartingCell="A1" />
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <ui:ExcelAppendRange DataTable="[ExtractDataTable]" DisplayName="Append Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelAppendRange_1" SheetName="Sheet1" />
               </Sequence>
             </ActivityAction>
           </ui:ExcelApplicationScope.Body>

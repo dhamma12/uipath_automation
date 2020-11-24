@@ -1,20 +1,39 @@
 VP OR President OR MD OR Director OR CEO OR CTO
-Procurement OR Head Vendor OR Vendor Management OR Contract Manager OR Founder
-Senior Engineering Manager OR Head of Engineering OR Director of Engineering
+Procurement OR Head Vendor OR Vendor Management OR Contract Manager OR Founder OR Country Head
+Senior Engineering Manager OR Head of Engineering OR Director of Engineering OR Manager key account
 India Head OR HR OR TA OR Talent Acquisition OR Human Resource OR Recruiter
 
-Ansys
-Amazon
-STMicroelectronics
-Walmart Labs India	--- Not Done
-Cerence
-The Toro Company
-Mitsubishi-corporation-india -- Not Done
-Denso
-Bose				-- Already present
-Marquardt India Pvt. Ltd
-Allgo Embedded
-Schindler Pvt Ltd
-UTC Aerospace
-Varroc Lighting Systems
-Mercedes-Benz Research and Development
+Truebil
+Lowe's India
+Safexpress Private Limited
+Synechron
+ABB
+Syska
+Thyssenkrupp
+Genpact
+Thermax Limited
+e-con Systems
+Danlaw			-- Confusion in the name, there are 2 companies starting with Danlaw
+Signify
+Scientific games
+VALEO
+nVent
+ECI Telecom
+ALTIOSTAR
+Motorola		-- Confusion in the name, there are multiple companies starting with Motorola
+Spirent Communications
+
+
+<webctrl css-selector='body&gt;div&gt;div&gt;div&gt;div' idx='4' tag='DIV' />
+
+<webctrl css-selector='body&gt;div&gt;div&gt;div&gt;div' idx='4' tag='DIV' />
+
+Name	URL	Designation	Location
+
+https://hsbc.zoom.us/j/6629969642?pwd=bWhLNW9RMlF0TE9JVU1uaUE3bXpHQT09
+
+Country Head OR Manager key account
+
+VP OR President OR MD OR Director OR CEO OR CTO
+
+Vice President
