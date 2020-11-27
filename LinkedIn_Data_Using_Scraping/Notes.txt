@@ -3,31 +3,45 @@ Procurement OR Head Vendor OR Vendor Management OR Contract Manager OR Founder O
 Senior Engineering Manager OR Manager key account OR Deputy Manager OR Project Manager OR General Manager OR Regional Manager
 HR OR TA OR Talent Acquisition OR Human Resource OR Recruiter
 
-DISH Network
-Cadence			-- Waiting for exact company name
-GLOBALFOUNDRIES
-Premier Inc.		-- No results for above filter
-Plintron
-Tokopedia
-AMETEK
-NortonLifeLock
-Cytel
-Lennox India Technology Centre
-EDB
-Synchronoss Technologies
-Simplilearn
-Vitesco Technologies
-Indus OS
-WSP
-Danaher Corporation
-EagleView
-Riverbed Technology
-Teradata
-Motorola Solutions
+ixigo
+Tickled Media
+Sony India Software Centre
+SAP Labs India
+Codingmart Technologies
+Meritnation.com
+Vertafore
+Mobis Technical Center of India(Hyundai Mobis R &D)
+Force Motors Ltd
+Bajaj Auto Ltd
+Aspen Technology
+Intralinks
+Progress
+Vistex
+PDI Software
+Plex Systems, Inc.
+Mindbody
+Skillsoft
+KEC International Ltd.
+Cargill
+ICOMM Tele Limited
+Sprint
+Technicolor
+Hitachi
+Micromax
+HTC
+Orange
+Carrier HVAC
+Ericsson
+Xiomi
+Affirmed Networks
+Hansen Technologies
+eGain Corporation
+IGT
+MSC Software
+Vayana Network
+Red Lion Controls
+ATLAS COPCO
+One network
 
-
-<webctrl css-selector='body&gt;div&gt;div&gt;div&gt;div' idx='4' tag='DIV' />
-
-<webctrl css-selector='body&gt;div&gt;div&gt;div&gt;div' idx='4' tag='DIV' />
 
 Name	URL	Designation	Location
