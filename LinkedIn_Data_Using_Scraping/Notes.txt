@@ -1,6 +1,6 @@
 VP OR President OR MD OR Director OR CEO OR CTO
 Procurement OR Head Vendor OR Vendor Management OR Contract Manager OR Founder OR Head
-Senior Engineering Manager OR Manager key account OR Deputy Manager OR Project Manager OR General Manager OR Regional Manager
+Senior Engineering Manager OR Manager key account OR Regional Manager
 HR OR TA OR Talent Acquisition OR Human Resource OR Recruiter
 
 ixigo
@@ -32,7 +32,7 @@ HTC
 Orange
 Carrier HVAC
 Ericsson
-Xiomi
+Xiomi IT Solutions		-- No employees
 Affirmed Networks
 Hansen Technologies
 eGain Corporation
@@ -40,8 +40,14 @@ IGT
 MSC Software
 Vayana Network
 Red Lion Controls
-ATLAS COPCO
+Atlas Copco
 One network
 
 
 Name	URL	Designation	Location
+
+'"& variable &"'
+
+'{{variable}}'
+
+Google Chrome Extension : XPather
