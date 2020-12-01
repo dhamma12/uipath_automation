@@ -3,51 +3,13 @@ Procurement OR Head Vendor OR Vendor Management OR Contract Manager OR Founder O
 Senior Engineering Manager OR Manager key account OR Regional Manager
 HR OR TA OR Talent Acquisition OR Human Resource OR Recruiter
 
-ixigo
-Tickled Media
-Sony India Software Centre
-SAP Labs India
-Codingmart Technologies
-Meritnation.com
-Vertafore
-Mobis Technical Center of India(Hyundai Mobis R &D)
-Force Motors Ltd
-Bajaj Auto Ltd
-Aspen Technology
-Intralinks
-Progress
-Vistex
-PDI Software
-Plex Systems, Inc.
-Mindbody
-Skillsoft
-KEC International Ltd.
-Cargill
-ICOMM Tele Limited
-Sprint
-Technicolor
-Hitachi
-Micromax
-HTC
-Orange
-Carrier HVAC
-Ericsson
-Xiomi IT Solutions		-- No employees
-Affirmed Networks
-Hansen Technologies
-eGain Corporation
-IGT
-MSC Software
-Vayana Network
-Red Lion Controls
-Atlas Copco
-One network
+Baxter International Inc.
+Bose Corporation
+Mitsubishi Aircraft Corporation
+Danlaw, Inc.			-Need to add US people also
 
+=CONCATENATE(LOWER(TRIM(A1)),".",LOWER(TRIM(B1)),"@truebil.com")
 
-Name	URL	Designation	Location
+=CONCATENATE(LEFT(LOWER(TRIM(A1)),1),LOWER(TRIM(B1)),"@forcemotors.com")
 
-'"& variable &"'
-
-'{{variable}}'
-
-Google Chrome Extension : XPather
+<webctrl parentid='ember*' tag='SPAN' idx='26' />
