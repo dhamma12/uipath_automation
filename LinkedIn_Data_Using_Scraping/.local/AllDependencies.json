@@ -1746,15 +1746,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dhammadeep.borkar\\.nuget\\packages\\": {}
+    "C:\\Users\\Kamalesh\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "LinkedIn_Data_Using_Scraping",
       "projectName": "LinkedIn_Data_Using_Scraping",
-      "projectPath": "C:\\Dhamma\\Others\\UiPath\\LinkedIn_Data_Using_Scraping\\.local",
-      "packagesPath": "C:\\Users\\dhammadeep.borkar\\.nuget\\packages\\",
-      "outputPath": "C:\\Dhamma\\Others\\UiPath\\LinkedIn_Data_Using_Scraping\\.local"
+      "projectPath": "C:\\Nainksha\\RPA\\LinkedIn_Data_Using_Scraping\\.local",
+      "packagesPath": "C:\\Users\\Kamalesh\\.nuget\\packages\\",
+      "outputPath": "C:\\Nainksha\\RPA\\LinkedIn_Data_Using_Scraping\\.local"
     },
     "frameworks": {
       "net461": {
